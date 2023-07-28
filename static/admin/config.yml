@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  
+  branch: main
+  
+local_backend: true
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "featuredImage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
+
+  - name: 'index'
+    label: 'Index'
+    folder: 'src/pages/'
+    create: false
+    fields:
+      - { label: 'HeadingOne', name: 'headingOne', widget: 'string' }
+      - { label: 'SubheadingOne', name: 'subheadingOne', widget: 'string' }
+      - { label: 'HeroButtonCtaOne', name: 'heroButtonCtaOne', widget: 'string' }
+      - { label: 'HeroButtonCtaTwo', name: 'heroButtonCtaTwo', widget: 'string' }
+      - { label: 'HeadingTwo', name: 'headingTwo', widget: 'string' }
+      - { label: 'HeadingThree', name: 'headingThree', widget: 'string' }
+      - { label: 'HeadingFour', name: 'headingFour', widget: 'string' }
+      - { label: 'HeroImage', name: heroImage, widget: image }
+      - { label: 'HeroButtonLinkOne', name: 'heroButtonLinkOne', widget: 'string' }
+      - { label: 'HeroButtonLinkTwo', name: 'heroButtonLinkTwo', widget: 'string' }
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "web-project"}
+      - {
+          label: Cards,
+          name: cards,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Desc, name: desc, widget: string},
+              { label: 'Icon', name: icon, widget: image },
+              { label: Alt, name: alt, widget: string},
+            ],
+        }
+      - {
+          label: Dependancies,
+          name: dependancies,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: title, widget: string },
+              { label: Desc, name: desc, widget: string},
+              { label: 'Icon', name: icon, widget: image },
+              { label: Alt, name: alt, widget: string},
+            ],
+        }
+      - {
+          label: Reviews,
+          name: reviews,
+          widget: list,
+          fields:
+            [
+              { label: Name, name: name, widget: string },
+              { label: Desc, name: desc, widget: string},
+            ],
+        }
+    
