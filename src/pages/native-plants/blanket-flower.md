@@ -22,8 +22,8 @@ companionFloridaNativePlants: Coontie (Zamia pumila), Saw Palmetto (Serenoa repe
 color: "#E05A50"
 interestingFacts: Blanket Flower is an excellent plant for attracting pollinators, including bees and butterflies, which can help promote a healthy ecosystem in your garden.  Gaillardia pulchella is also known for its hardiness and ability to thrive in a variety of soil conditions, making it a low-maintenance option for gardeners.
 reasonsToAvoid: |
-    Some gardeners may choose to avoid Gaillardia pulchella due to its short lifespan as an annual or short-lived perennial. This means that the plant will need to be replaced more frequently than other longer-lived perennials. Additionally, the plant can self-seed prolifically, which may lead to it spreading more than desired in some garden settings. 
-
+  Some gardeners may choose to avoid Gaillardia pulchella due to its short lifespan as an annual or short-lived perennial. This means that the plant will need to be replaced more frequently than other longer-lived perennials.
+  Additionally, the plant can self-seed prolifically, which may lead to it spreading more than desired in some garden settings.
 imageOne: /img/blanket-flower-1.png
 imageTwo: /img/blanket-flower-2.png
 imageThree: /img/blanket-flower-3.png

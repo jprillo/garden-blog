@@ -556,7 +556,7 @@ font-size:30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 7%;
+
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -565,11 +565,11 @@ font-size:30px;
         min-width: 200px;
         display: flex;
         flex-direction: column;
-      padding: 1rem;
+      padding: 2rem;
         align-items: center;
         text-align: center;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
 
         img{
             width: 100px;
@@ -605,11 +605,11 @@ font-size:30px;
 }
 .flower-container{
     width: 100%;
-    margin-bottom: 20px;
-
+    margin: 20px;
 padding: 15px;
     text-align: center;
     border: 2px solid;
+
 
     &:hover {
         background-color: rgb(238, 231, 243);
@@ -627,7 +627,7 @@ border-width: 10px;
 
             }
         @include breakpoint(lg){
-            width: 30%;
+            width: 25%;
 
             }
 

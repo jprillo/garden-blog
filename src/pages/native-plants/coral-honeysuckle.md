@@ -5,7 +5,7 @@ otherNames: Trumpet Honeysuckle
 scientificName: Lonicera sempervirens
 family: Caprifoliaceae
 size: Vines can grow up to 10-20 ft long
-hostTo: Hummingbirds and butterflies, including the Hummingbird Clearwing moth
+hostTo: Hummingbird Clearwing Moth
 zones: USDA Hardiness Zones 4-9
 toxic: Berries are mildly toxic if ingested
 lifespan: Perennial
@@ -21,7 +21,7 @@ similarFloridaNativePlants: Crossvine (Bignonia capreolata), Virginia Creeper (P
 companionFloridaNativePlants: Butterfly Milkweed (Asclepias tuberosa), Blanket Flower (Gaillardia pulchella), Purple Passionflower (Passiflora incarnata)
 color: "#FF6A6A"
 interestingFacts: Coral Honeysuckle is a valuable plant for wildlife, attracting hummingbirds, butterflies, and bees with its nectar-rich flowers, and birds with its small, red berries. Unlike its invasive cousin, Japanese Honeysuckle, Coral Honeysuckle is native to the United States and is not aggressive, making it a more environmentally friendly choice for gardens. It's also a host plant for the Spring Azure butterfly's larvae.
-reasonsToAvoid: While Coral Honeysuckle is generally a great choice for most gardens, there are a few reasons some people might choose to avoid it. The berries of Coral Honeysuckle are mildly toxic if ingested, which could be a concern for households with pets or small children. In addition, while this plant is not typically invasive, it can grow quite vigorously and may require regular pruning to keep its growth in check. Lastly, it is susceptible to some pests and diseases, including aphids and powdery mildew, which can require additional care to manage.
+reasonsToAvoid: While Coral Honeysuckle is generally a great choice for most gardens, there are a few reasons some people might choose to avoid it. The berries of Coral Honeysuckle are mildly toxic if ingested, which could be a concern for households with pets or small children.In addition, while this plant is not typically invasive, it can grow quite vigorously and may require regular pruning to keep its growth in check. Lastly, it is susceptible to some pests and diseases, including aphids and powdery mildew, which can require additional care to manage.
 
 imageOne: /img/coral-honeysuckle1.png
 imageTwo: /img/coral-honeysuckle2.png
