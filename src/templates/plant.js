@@ -34,8 +34,8 @@ export const PlantTemplate = ({
   pestsAndPrevention,
   similarFloridaNativePlants,
   companionFloridaNativePlants,
-  imageOne, 
-  imageTwo, 
+  imageOne,
+  imageTwo,
   imageThree,
   helmet,
   color,
@@ -48,23 +48,23 @@ export const PlantTemplate = ({
     <div style={{overflowX: "hidden"} }>
       <Layout>
       {helmet || ""}
-     
-      
+
+
             <div className="flex gap-1 pad-top b-pad h-pad">
                 <div className="col-7" style={{position: "relative"}}>
-               
+
         <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
         <h2 className="sci-name" style={{ backgroundColor: color}} >{scientificName}</h2>
         <img className="h-image" src={imageOne} alt={commonName} width="100%"/>
-      
+
      <div >
-       
+
         <p style={{padding: "2rem 0"}}>{description}</p>
         <p><span className="bold">Other Common Names: </span>{otherNames}</p>
         </div>
         </div>
         <div className="col-5 stats" style={{paddingTop: "100px"}}>
-          
+
 <p><span className="bold">Family: </span>{family}</p>
 <p><span className="bold">Size: </span>{size}</p>
 <p><span className="bold">Host to: </span>{hostTo}</p>
@@ -126,23 +126,23 @@ export const PlantTemplate = ({
         <p>{similarFloridaNativePlants}</p>
 
             </div>
-      
-    
 
 
 
-     
-     
+
+
+
+
                 </div>
 
-            
+
 <div className="web-content">
 <PostContent content={content} />
 </div>
-              
-</div>        
+
+</div>
             </Layout>
-      
+
     </div>
   );
 };
@@ -162,7 +162,7 @@ const PlantPost = ({ data }) => {
 
   return (
 <div >
-    
+
       <PlantTemplate
       content={post.html}
       contentComponent={HTMLContent}
@@ -191,9 +191,9 @@ const PlantPost = ({ data }) => {
       color={post.frontmatter.color}
       interestingFacts={post.frontmatter.interestingFacts}
       reasonsToAvoid={post.frontmatter.reasonsToAvoid}
-     
+
       />
-    
+
     </div>
   );
 };
