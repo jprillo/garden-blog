@@ -44,29 +44,29 @@ export const ButterflyTemplate = ({
       {helmet || ""}
 
 
-            <div className="flex gap-1 pad-top b-pad h-pad" style={{alignItems: "center"}}>
+            <div className="flex gap-1 pad-top h-pad " >
                 <div className="col-7" style={{position: "relative"}}>
-
+<div className="butterfly-name">
         <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
         <h2 className="sci-name" style={{ backgroundColor: color}} >{latinName}</h2>
-
-
-
-     <div >
-
-        <p style={{padding: "3rem 0 .5rem"}}>{description}</p>
-        <p style={{padding: ".5rem 0"}}><span className="bold">Family: </span>{family}</p>
-        <p style={{padding: ".5rem 0"}}><span className="bold">Other Common Names: </span>{otherNames}</p>
-<p style={{padding: ".5rem 0"}}><span className="bold">Size: </span>{size}</p>
-<p style={{padding: ".5rem 0"}}><span className="bold">Host Plant: </span>{host}</p>
-<p style={{padding: ".5rem 0"}}><span className="bold">Distribution: </span>{distribution}</p>
-<p style={{padding: ".5rem 0"}}><span className="bold">Conservation Status:</span> {conservationStatus}</p>
-
         </div>
-        </div>
-        <div className="col-5" >
         <img className="h-image" src={imageOne} alt={commonName} width="100%"/>
-        <p>Image Credit: Sara Perno</p>
+        <p style={{fontSize: "18px"}}>Image Credit: Sara Perno</p>
+        <p style={{padding: "1rem 0 0 0"}}>{description}</p>
+
+        </div>
+        <div className="col-5 stats"  >
+
+
+
+
+
+<p><span className="bold">Family: </span>{family}</p>
+<p ><span className="bold">Other Common Names: </span>{otherNames}</p>
+<p ><span className="bold">Size: </span>{size}</p>
+<p ><span className="bold">Host Plant: </span>{host}</p>
+<p ><span className="bold">Distribution: </span>{distribution}</p>
+<p ><span className="bold">Conservation Status:</span> {conservationStatus}</p>
 
 
 
@@ -78,32 +78,21 @@ export const ButterflyTemplate = ({
 
 
 
-       <div className="flex gap-1 pad-top b-pad h-pad" >
+       <div className="flex gap-1 pad-top b-pad h-pad"  >
 
 
 
 
-<div  className="web-content col-8">
+<div  className="web-content col-7">
 <PostContent content={content} />
 </div>
-<div className="col-4">
-  <div style={{border: "solid blue 2px"}}><h4 style={{color: "blue"}}>Did you Know?</h4><p>{interestingFactsTwo}</p></div>
-  <div style={{border: "solid blue 2px"}}><h4 style={{color: "blue"}}>Did you Know?</h4><p>{interestingFactsThree}</p></div>
+<div className="col-5">
+  <div style={{border: "solid blue 4px", borderColor: color, padding: "1rem", borderRadius: "25px"}}><h4 style={{color: color }}>Did you Know?</h4><p style={{color: color}}>{interestingFactsTwo}</p></div>
+  <div style={{border: "solid blue 4px", borderColor: color, padding: "1rem", borderRadius: "25px"}}><h4 style={{color: color }}>Did you Know?</h4><p style={{color: color}}>{interestingFactsOne}</p></div>
+
 </div>
 </div>
-<div className="pad-top b-pad h-pad" style={{background: "green"}}>
-{interestingFactsOne}
-{culturalSignificance}
-
-
-{migration}
-{whereToFind}
-{flightSpeed}
-
-{culturalSignificance}
-{predatorsAndThreats}
-        </div>
-            </Layout>
+           </Layout>
 
     </div>
   );

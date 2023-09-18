@@ -7,7 +7,7 @@ family: Passifloraceae
 size: Vines can grow up to 15-20 ft long
 hostTo: Gulf Fritillary and Zebra Longwing butterflies
 zones: USDA Hardiness Zones 6-9
-toxic: No, but unripe fruit may cause stomach upset if ingested
+toxic: Unripe fruit may cause upset stomach if ingested
 lifespan: Perennial
 description: Passiflora incarnata, also known as Purple Passionflower, is a vigorous, tendril-climbing vine with intricate, purple and white flowers and lobed, dark green leaves. The plant produces an edible fruit known as a maypop.
 waterNeeds: Moderate water requirements; tolerates dry conditions once established but prefers consistently moist soil

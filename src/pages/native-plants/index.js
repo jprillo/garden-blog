@@ -19,7 +19,7 @@ export default function Plants({data}) {
 
 <Layout>
 
-<div className="h-pad" style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", paddingTop: "50px", paddingBottom: "50px"}}>
+<div className="h-pad" style={{display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "3%"}}>
 {h.map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug} style={{
             borderColor: item.node.frontmatter.color,

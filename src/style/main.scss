@@ -516,20 +516,57 @@ form{
         margin: 0 1rem;
     }
   }
+.butterfly-name{
+    h1{
 
+            font-size: 35px;
+
+        @include breakpoint(md){
+            font-size: 45px;
+        }
+        @include breakpoint(lg){
+            font-size: 55px;
+        }
+        @include breakpoint(xlg){
+            font-size: 60px;
+        }
+    }
+    h2{
+
+        font-size: 20px;
+        margin-top: -70px;
+
+    @include breakpoint(md){
+        font-size: 25px;
+        margin-top: -60px;
+    }
+    @include breakpoint(lg){
+        font-size: 30px;
+        margin-top: -50px;
+
+    }
+    @include breakpoint(xlg){
+        font-size: 30px;
+        margin-top: -45px;
+    }
+}
+}
   .sci-name{
     color: white;
     background: orange;
 margin-left: -200px;
 padding-left: 200px;
-font-size:30px;
+
 border-radius: 25px;
 position: absolute;
-margin-top: -50px;
+
 top: 120px;
 font-weight: 400;
 padding-right: 100px;
 padding: .25rem 100px .25rem 200px;
+
+
+
   }
   .lifespan{
     color: white;
@@ -587,6 +624,10 @@ font-size:30px;
     display: flex;
     flex-direction: column;
   gap: 2.5rem;
+
+  @include breakpoint(md){
+    padding-top: 100px;
+}
     span{
             padding-right: 2rem;
     }
@@ -605,10 +646,10 @@ font-size:30px;
 }
 .flower-container{
     width: 100%;
-    margin: 20px;
-padding: 15px;
+    margin: 20px 0;
+padding: 5px;
     text-align: center;
-    border: 2px solid;
+    border: 5px solid;
 
 
     &:hover {
@@ -627,8 +668,17 @@ border-width: 10px;
 
             }
         @include breakpoint(lg){
-            width: 25%;
+            width: 30%;
 
             }
 
 }
+.plants-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 3%;
+  }
+

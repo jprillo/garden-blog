@@ -5,7 +5,7 @@ otherNames: Butterfly Milkweed, Pleurisy Root, Orange Milkweed
 scientificName: Asclepias tuberosa
 family: Apocynaceae
 size: 1-3 ft tall and 1-2 ft wide
-hostTo: Monarch butterflies
+hostTo: Monarch Butterfly
 zones: USDA Hardiness Zones 4-9
 toxic: Contains toxic compounds called cardenolides, which can be harmful if ingested in large quantities. The sap can cause skin and eye irritation.
 lifespan: Perennial
@@ -22,7 +22,7 @@ companionFloridaNativePlants: Blanket Flower (Gaillardia pulchella), Purple Cone
 color: "#FF8C00"
 interestingFacts: Asclepias tuberosa, or Butterfly Weed, is a crucial host plant for the iconic Monarch butterfly, providing a food source for their caterpillars. This plant plays a significant role in supporting the dwindling Monarch populations. Additionally, Butter The plant's deep taproot makes it drought-tolerant and able to withstand challenging environmental conditions.
 reasonsToAvoid: |
-    While Butterfly Weed has many benefits, there are a few reasons some gardeners might avoid planting it. Due to the toxic compounds in the plant, it can be harmful if ingested in large quantities and may cause skin or eye irritation. Additionally, the plant's deep taproot makes transplanting difficult, so it's essential to choose a suitable location when initially planting it.   
+    While Butterfly Weed has many benefits, there are a few reasons some gardeners might avoid planting it. Due to the toxic compounds in the plant, it can be harmful if ingested in large quantities and may cause skin or eye irritation. Additionally, the plant's deep taproot makes transplanting difficult, so it's essential to choose a suitable location when initially planting it.
 
 imageOne: /img/butterfly-weed-1.png
 imageTwo: /img/butterfly-weed-2.png

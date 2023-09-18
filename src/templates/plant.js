@@ -52,9 +52,10 @@ export const PlantTemplate = ({
 
             <div className="flex gap-1 pad-top b-pad h-pad">
                 <div className="col-7" style={{position: "relative"}}>
-
+                <div className="butterfly-name">
         <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
         <h2 className="sci-name" style={{ backgroundColor: color}} >{scientificName}</h2>
+        </div>
         <img className="h-image" src={imageOne} alt={commonName} width="100%"/>
 
      <div >
@@ -63,15 +64,17 @@ export const PlantTemplate = ({
         <p><span className="bold">Other Common Names: </span>{otherNames}</p>
         </div>
         </div>
-        <div className="col-5 stats" style={{paddingTop: "100px"}}>
+        <div className="col-5 stats">
 
 <p><span className="bold">Family: </span>{family}</p>
 <p><span className="bold">Size: </span>{size}</p>
-<p><span className="bold">Host to: </span>{hostTo}</p>
+<p  style={{ display: hostTo === "none" ? "none" : "block" }}><span className="bold">Host to: </span>{hostTo}</p>
 <p><span className="bold">Zones: </span>{zones}</p>
 <p style={{ background: lifespan === "Perennial" ? "" : "purple" }} className="lifespan">{lifespan}</p>
-<p className={toxic === "No" ? "safe" : "toxicity" }>{toxic === "No" ? "Non-Toxic" : toxic }</p>
-
+<div  className={toxic === "No" ? "safe" : "toxicity" }>
+  <p style={{color: "red", display: toxic === "No" ? "none" : "block" }}><b>Toxicity</b></p>
+<p style={{color: toxic  === "No" ? "green" : "red"}}>{toxic === "No" ? "Non-Toxic" : toxic }</p>
+</div>
         </div>
         </div>
         <div className="flex-5 h-pad ">

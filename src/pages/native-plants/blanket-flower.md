@@ -5,7 +5,7 @@ otherNames: Indian Blanket, Firewheel
 scientificName: Gaillardia pulchella
 family: Asteraceae
 size: 1-2 ft tall, 1-1.5 ft wide
-hostTo: Pollinators, bees, butterflies
+hostTo: none
 zones: 3-10
 toxic: No
 lifespan: Annual or short-lived perennial
