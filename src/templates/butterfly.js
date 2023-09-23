@@ -44,7 +44,7 @@ export const ButterflyTemplate = ({
       {helmet || ""}
 
 
-            <div className="flex gap-1 pad-top h-pad " >
+            <div className="flex gap-1 pad-top h-pad b-pad" >
                 <div className="col-7" style={{position: "relative"}}>
 <div className="butterfly-name">
         <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
@@ -61,12 +61,12 @@ export const ButterflyTemplate = ({
 
 
 
-<p><span className="bold">Family: </span>{family}</p>
-<p ><span className="bold">Other Common Names: </span>{otherNames}</p>
-<p ><span className="bold">Size: </span>{size}</p>
-<p ><span className="bold">Host Plant: </span>{host}</p>
-<p ><span className="bold">Distribution: </span>{distribution}</p>
-<p ><span className="bold">Conservation Status:</span> {conservationStatus}</p>
+<p><span  className="bold">Family: </span>{family}</p>
+<p ><span className="bold">Other Common Names: </span><br></br>{otherNames}</p>
+<p ><span className="bold">Size: </span><br></br>{size}</p>
+<p ><span className="bold">Host Plant: </span><br></br>{host}</p>
+<p ><span className="bold">Distribution: </span><br></br>{distribution}</p>
+<p ><span className="bold">Conservation Status:</span> <br></br>{conservationStatus}</p>
 
 
 
@@ -78,7 +78,7 @@ export const ButterflyTemplate = ({
 
 
 
-       <div className="flex gap-1 pad-top b-pad h-pad"  >
+       <div className="flex gap-1 pad-top b-pad h-pad"  style={{background: "#e7f5fb"}}>
 
 
 
