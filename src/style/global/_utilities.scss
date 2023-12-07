@@ -9,15 +9,15 @@
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    @include breakpoint(lg){       
+    @include breakpoint(lg){
         padding-left: 7vw;
         padding-right: 7vw;
      }
-     @include breakpoint(xlg){       
-        padding-left: 10vw;
-        padding-right: 10vw;
+     @include breakpoint(xlg){
+        padding-left: 9vw;
+        padding-right: 9vw;
      }
-   
+
 
 }
 .v-pad{
@@ -29,7 +29,7 @@
 }
 .gap-1{
     gap: 60px;
-   
+
     @include breakpoint(md){
        gap: 7vw;
     }
@@ -89,7 +89,7 @@ padding-right: 10vh;
 
 .mobile-hide{
 display: none;
-@include breakpoint(md){       
+@include breakpoint(md){
    display: block;
 }
 }

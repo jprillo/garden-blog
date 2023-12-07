@@ -3,11 +3,11 @@ import { Link } from 'gatsby'
 import TagFlag from '../components/tagFlag'
 
 export default function BlogArticle({
-  title, 
+  title,
   description,
   featuredImage,
-  type, 
-  width, 
+  type,
+  width,
   slug,
   tag
 
@@ -19,13 +19,13 @@ export default function BlogArticle({
       const tagColors = [
         "#d5FFFd", "#f1d296", "#FEE1F3", "lightgoldenrodyellow", "#98ffc1"
       ]
-   
+
     return (
 
         <Link to = {slug} className={width}>
         <div className= {"blog-article " + type} style={{backgroundImage:  `linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%,rgba(0, 0, 0, 0.64) 50%, rgba(0, 0, 0, 0.81) 100%), url('${featuredImage}')`,
-      borderColor: (() => {          
-        switch (tag) { 
+      borderColor: (() => {
+        switch (tag) {
           case usedTags[0]:   return tagColors[0];
           case usedTags[1]:   return tagColors[1];
           case usedTags[2]: return tagColors[2];
@@ -33,15 +33,15 @@ export default function BlogArticle({
           case usedTags[4]:  return tagColors[4];
 
           default:  return 'blueviolet';
-          
-         
+
+
         }
       })()
-      
+
       }}>
 
         <div className="column">
-          
+
               <TagFlag
          tag = {tag}
          color1 = {tagColors[0]}
@@ -53,16 +53,16 @@ export default function BlogArticle({
          tag2 = {usedTags[1]}
          tag3 = {usedTags[2]}
          tag4 = {usedTags[3]}
-         tag5 = {usedTags[4]}   
+         tag5 = {usedTags[4]}
 
-         
+
          />
          </div>
-        
+
             <h1>{title}</h1>
             <p>{description}</p>
-         
-  
+
+
         </div>
         </Link>
 

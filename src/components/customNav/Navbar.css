@@ -1,0 +1,60 @@
+/* styles/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar-toggler {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+  }
+
+  .navbar-collapse {
+    display: flex;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-item .nav-link.active {
+    background-color: #555;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    .navbar-toggler {
+      display: block; /* Show the hamburger icon on mobile */
+    }
+
+    .navbar-collapse {
+      display: none; /* Hide the nav links on mobile */
+    }
+
+    .navbar-collapse.open {
+      display: flex; /* Show the nav links when the hamburger is clicked */
+      flex-direction: column; /* Stack the links vertically on mobile */
+    }
+  }

@@ -18,16 +18,16 @@ export default function Blog({data}) {
     const htag = h.tags[0]
     const otherPosts = d.edges.slice(3)
 
- 
-    
+
+
   return <div >
       <Helmet>
         <title>Geeby | Gatsby Starter Blog</title>
         <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
         <meta name="theme-color" content="black" />
       </Helmet>
-     
-<div style={{background: "#202124"}}>
+
+<div >
 <Layout color="ddd" >
   <div className="h-pad pad-top">
 <TagBar/>
@@ -43,9 +43,9 @@ export default function Blog({data}) {
       description = {h.description}
       featuredImage = {h.featuredImage.publicURL}
       />
-   
 
-  
+
+
     </div>
     <div className="col-4-gap column gap-2 padd" >
     <BlogArticle
@@ -67,8 +67,8 @@ export default function Blog({data}) {
       description = {t.description}
       featuredImage = {t.featuredImage.publicURL}
       />
-  
-       
+
+
     </div>
     </div>
     <div className="flex gap-2 h-pad b-pad" >
@@ -85,11 +85,11 @@ export default function Blog({data}) {
   />
 </div>
 ))}
-   
+
       </div>
     </Layout>
 </div>
- 
+
   </div>
 }
 

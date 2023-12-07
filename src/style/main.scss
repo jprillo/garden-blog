@@ -520,7 +520,9 @@ form{
     h1{
 
             font-size: 35px;
-
+            @include breakpoint(xs){
+                font-size: 30px;
+            }
         @include breakpoint(md){
             font-size: 45px;
         }
@@ -535,7 +537,10 @@ form{
 
         font-size: 20px;
         margin-top: -70px;
-
+        @include breakpoint(xs){
+            font-size: 18px;
+            margin-top: -80px;
+        }
     @include breakpoint(md){
         font-size: 25px;
         margin-top: -60px;
@@ -623,7 +628,7 @@ font-size:30px;
 .stats{
     display: flex;
     flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
 
   @include breakpoint(md){
     padding-top: 100px;
@@ -681,4 +686,90 @@ border-width: 10px;
     padding-bottom: 50px;
     gap: 3%;
   }
+
+
+
+  // Contact
+
+
+.form-btn{
+    padding: .5em 1em;
+    background: $primary-color;
+    color: white;
+    font-family: $primary-font;
+    font-weight: 700;
+    &:hover{
+      background-color: $secondary-color;
+    }
+    }
+
+    form{
+      text-align: center;
+      color: var(--textNormal);
+
+
+      label{
+        font-family: $primary-font;
+        @include breakpoint(md){
+          margin-right: 1.5em;
+          text-align: left;
+        }
+
+      }
+    }
+    .field{
+      margin:  0;
+      text-align: left;
+
+      @include breakpoint(md){
+
+      margin: 2em 0 0;
+    }
+    }
+
+    .primary-button{
+        padding: .5em 3em;
+        font-weight: bold;
+        font-size: 20px;
+        background: #FF1988;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: .12em .20em .12em rgba(0, 0, 0, 0.25);
+        margin: 50px 0 0 0;
+        color: white;
+        ;
+        font-family: $primary-font;
+        &:hover{
+            background: $hover-color;
+            color: rgb(163, 160, 160);
+            transition:.2s
+        }
+        &:active{
+            box-shadow: .08em .16em .08em rgba(0, 0, 0, 0.55);
+        }
+        @media (min-width: 1024px) {
+            font-size: 23px;
+          }
+      }
+      .contact-input{
+        font-family: $secondary-font;
+       font-size: 25px;
+       &:focus{
+        border: 5px solid $active-color;
+       }
+
+
+      }
+      .control{
+        margin: .5rem 0 0 0 ;
+      }
+
+      .gap-4{
+        gap: 0;
+        @include breakpoint(md){
+         gap: 50px;
+      }
+
+
+      }
 

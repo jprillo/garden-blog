@@ -50,7 +50,7 @@ export const PlantTemplate = ({
       {helmet || ""}
 
 
-            <div className="flex gap-1 pad-top b-pad h-pad">
+            <div className="flex gap-1 pad-top h-pad" style={{alignItems: "center"}}>
                 <div className="col-7" style={{position: "relative"}}>
                 <div className="butterfly-name">
         <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
@@ -58,11 +58,7 @@ export const PlantTemplate = ({
         </div>
         <img className="h-image" src={imageOne} alt={commonName} width="100%"/>
 
-     <div >
 
-        <p style={{padding: "2rem 0"}}>{description}</p>
-        <p><span className="bold">Other Common Names: </span>{otherNames}</p>
-        </div>
         </div>
         <div className="col-5 stats">
 
@@ -77,8 +73,17 @@ export const PlantTemplate = ({
 </div>
         </div>
         </div>
+        <div className="flex gap-1 b-pad h-pad" style={{alignItems: "center"}}>
+                <div className="col-7" style={{position: "relative"}}>
+
+
+<p style={{padding: "2rem 0"}}>{description}</p>
+<p><span className="bold">Other Common Names: </span>{otherNames}</p>
+</div></div>
+
         <div className="flex-5 h-pad ">
           <div>
+            <h3>Water Needs</h3>
             <img src={water} alt="logo"/>
           <p>{waterNeeds}</p>
           </div>

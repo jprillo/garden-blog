@@ -1,6 +1,6 @@
 ---
 templateKey: butterfly
-commonName: Monarch Butterfly
+commonName: Monarch 
 otherNames: Milkweed Butterfly, Black Veined Brown
 latinName: Danaus plexippus
 color: "#ff5a06"
