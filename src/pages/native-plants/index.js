@@ -19,16 +19,14 @@ export default function Plants({data}) {
 
 <Layout>
 
-<div className="h-pad" style={{display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "3%"}}>
+<div className="h-pad" style={{background: "#2A094B", display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "3%"}}>
 {h.map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug} style={{
-            borderColor: item.node.frontmatter.color,
-           borderRadius: "25px" }}>
-            <div >
-            <img width="100%" alt="somethong" src={item.node.frontmatter.imageOne.publicURL}/>
-              </div>
+            borderColor: item.node.frontmatter.color, position: "relative", backgroundImage: `url(${item.node.frontmatter.imageOne.publicURL})` ,
+           borderRadius: "25px", height: "200px", backgroundPosition: "center", backgroundSize: "cover" }}>
+
 <div >
-              <h3 style={{color: item.node.frontmatter.color}}>{item.node.frontmatter.commonName}</h3>
+              <h3 style={{color: item.node.frontmatter.color, position: "absolute", top: 0}}>{item.node.frontmatter.commonName}</h3>
 
               </div>
 

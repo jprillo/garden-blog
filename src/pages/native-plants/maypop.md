@@ -1,6 +1,6 @@
 ---
 templateKey: plant
-commonName: Maypop
+commonName: Maypop Passionvine
 otherNames: Purple Passionflower, Wild Passion Vine
 scientificName: Passiflora incarnata
 family: Passifloraceae

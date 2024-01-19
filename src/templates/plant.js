@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { graphql, Link } from "gatsby";
+
+import { graphql } from "gatsby";
 import Layout from "../components/layout2";
 import Content, { HTMLContent } from "../components/Content";
 import soil from '../images/soil.png'
@@ -53,10 +54,10 @@ export const PlantTemplate = ({
             <div className="flex gap-1 pad-top h-pad" style={{alignItems: "center"}}>
                 <div className="col-7" style={{position: "relative"}}>
                 <div className="butterfly-name">
-        <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
+        <h1 style={{paddingBottom: "1rem", color:" black"}}>{commonName}</h1>
         <h2 className="sci-name" style={{ backgroundColor: color}} >{scientificName}</h2>
         </div>
-        <img className="h-image" src={imageOne} alt={commonName} width="100%"/>
+        <img className="h-image" src={imageOne} alt={commonName} style={{borderWidth: "10em", borderColor: color}} width="100%"/>
 
 
         </div>
@@ -81,25 +82,31 @@ export const PlantTemplate = ({
 <p><span className="bold">Other Common Names: </span>{otherNames}</p>
 </div></div>
 
-        <div className="flex-5 h-pad ">
+        <div className="needs flex-5 h-pad " style={{backgroundColor: color}}>
           <div>
-            <h3>Water Needs</h3>
+            <h3>Water</h3>
             <img src={water} alt="logo"/>
           <p>{waterNeeds}</p>
           </div>
           <div>
+
+
+          <h3>Sun</h3>
           <img src={sun} alt="logo"/>
           <p>{sunNeeds}</p>
             </div>
             <div>
+            <h3>Fertilizer</h3>
             <img src={fertilizer} alt="logo"/>
             <p>{fertilizerNeeds}</p>
             </div>
             <div>
+            <h3>Soil</h3>
             <img src={soil} alt="logo"/>
             <p>{soilNeeds}</p>
             </div>
             <div>
+            <h3>Propagation</h3>
             <img src={propagate} alt="logo"/>
             <p>{propagation}</p>
             </div>
@@ -110,41 +117,10 @@ export const PlantTemplate = ({
 
 </div>
 <div >
-        <div className="h-pad flex gap-1 info" style={{alignItems: "center"}}>
-          <div className="col-6">
-          <h3 style={{color: color}}>Where to plant your {commonName}</h3>
-        <p>{bestPlace}</p>
-        <h4>Companion Plants</h4>
-        <p>{companionFloridaNativePlants}</p>
-       <p> {interestingFacts}</p>
-          </div>
-          <div className="col-6">
-          <img className="h-image" src={imageTwo} alt={commonName} width="100%"  />
-            </div>
-       </div>
-       <div className="flex h-pad gap-1 info"  style={{alignItems: "center"}}>
-       <div className="col-6">
-       <img className="h-image" src={imageThree} alt={commonName} width="100%"/>
-            </div>
-            <div className="col-6">
-              <h4>Reasons to Avoid</h4>
-              <p>{reasonsToAvoid}</p>
-            <h3>Take Control of Pests</h3>
-        <p>{pestsAndPrevention}</p>
-        <p>{similarFloridaNativePlants}</p>
-
-            </div>
 
 
 
-
-
-
-
-                </div>
-
-
-<div className="web-content">
+<div>
 <PostContent content={content} />
 </div>
 
@@ -189,16 +165,11 @@ const PlantPost = ({ data }) => {
       fertilizerNeeds={post.frontmatter.fertilizerNeeds}
       soilNeeds={post.frontmatter.soilNeeds}
       propagation={post.frontmatter.propagation}
-      bestPlace={post.frontmatter.bestPlace}
-      pestsAndPrevention={post.frontmatter.pestsAndPrevention}
-      similarFloridaNativePlants={post.frontmatter.similarFloridaNativePlants}
-      companionFloridaNativePlants={post.frontmatter.companionFloridaNativePlants}
+
       imageOne={post.frontmatter.imageOne.publicURL}
-      imageTwo={post.frontmatter.imageTwo.publicURL}
-      imageThree={post.frontmatter.imageThree.publicURL}
+
       color={post.frontmatter.color}
-      interestingFacts={post.frontmatter.interestingFacts}
-      reasonsToAvoid={post.frontmatter.reasonsToAvoid}
+
 
       />
 
@@ -235,19 +206,9 @@ export const pageQuery = graphql`
         fertilizerNeeds
         soilNeeds
         propagation
-        bestPlace
-        pestsAndPrevention
-        similarFloridaNativePlants
-        companionFloridaNativePlants
+
         color
-        interestingFacts
-        reasonsToAvoid
-        imageThree {
-          publicURL
-        }
-        imageTwo {
-          publicURL
-        }
+
         imageOne {
           publicURL
         }

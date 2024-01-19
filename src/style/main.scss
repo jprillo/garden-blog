@@ -655,12 +655,19 @@ font-size:30px;
 padding: 5px;
     text-align: center;
     border: 5px solid;
+   
 
-
+h3{
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+}
     &:hover {
         background-color: rgb(238, 231, 243);
 padding: 5px;
 border-width: 10px;
+
 
 
       }
@@ -677,6 +684,17 @@ border-width: 10px;
 
             }
 
+}
+.flower-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65); /* Dark overlay with 50% opacity */
+    border-radius: 25px; /* To match the border radius of the container */
+    pointer-events: none; /* Prevents the overlay from interfering with clicks */
 }
 .plants-container {
     display: flex;
@@ -773,3 +791,20 @@ border-width: 10px;
 
       }
 
+.needs{
+    gap: 2em;
+
+    div{
+        border-radius: 25px;
+        background: white;
+        padding: 2.5em;
+
+        h3{
+            font-size: 30px;
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}

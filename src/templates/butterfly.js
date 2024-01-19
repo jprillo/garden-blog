@@ -50,7 +50,7 @@ export const ButterflyTemplate = ({
         <h1 style={{paddingBottom: "1rem"}}>{commonName}</h1>
         <h2 className="sci-name" style={{ backgroundColor: color}} >{latinName}</h2>
         </div>
-        <img className="h-image" src={imageOne} alt={commonName} width="100%"/>
+        <img className="h-image" src={imageOne} alt={commonName} width="100%" />
         <p style={{fontSize: "18px"}}>Image Credit: Sara Perno</p>
         <p style={{padding: "1rem 0 0 0"}}>{description}</p>
 
