@@ -26,3 +26,26 @@ imageOne: /img/coneflower1.png
 imageTwo: /img/coneflower2.png
 imageThree: /img/coneflower3.png
 ---
+<div class="h-pad flex gap-1 info" style={{alignItems: "center"}}>
+    <div class="col-6">
+        <h3>Planting and Caring for Purple Coneflower</h3>
+        <p>Purple Coneflower is a striking native North American wildflower, perfect for native plant gardens, prairie-style landscapes, or borders. It flourishes in sunny to partially shaded areas and has moderate water requirements. The daisy-like pink-purple flowers with their distinctive orange-brown centers are not only a visual delight but also attract bees, butterflies, and birds.</p>
+        <h4>Companion Plants</h4>
+        <a href="#">Coral Honeysuckle (Lonicera sempervirens)</a>, <br> <a href="#">Butterfly Milkweed (Asclepias tuberosa)</a>, <br> <a href="#">Wild Lime (Zanthoxylum fagara)</a>
+        <p>With its large, colorful flowers, the Purple Coneflower is an essential part of any pollinator garden, providing nectar for bees and butterflies, and seeds for birds.</p>
+    </div>
+    <div class="col-6">
+        <img class="h-image" src="/img/coneflower2.png" alt="purple coneflower" width="100%" />
+    </div>
+</div>
+<div class="flex h-pad gap-1 info" style={{alignItems: "center"}}>
+    <div class="col-6">
+        <img class="h-image" src="/img/coneflower3.png" alt="purple coneflower" width="100%"/>
+    </div>
+    <div class="col-6">
+        <h3>Considerations Before Planting</h3>
+        <p>Although Purple Coneflower is generally easy to grow, it's important to consider its preference for well-drained soil and its susceptibility to certain pests and diseases like Japanese beetles and powdery mildew. Regular monitoring and care are needed to manage these effectively.</p>
+        <h3>Pest and Disease Management</h3>
+        <p>Be vigilant for Japanese beetles, leaf spot, powdery mildew, and vine weevils. Employing suitable insecticides or fungicides can help in managing these issues.</p>
+    </div>
+</div>
