@@ -20,7 +20,7 @@ export default function Blog({data}) {
 
 
 
-  return <div >
+  return <div style={{background: "#2A094B"}}>
       <Helmet>
         <title>Geeby | Gatsby Starter Blog</title>
         <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
@@ -29,10 +29,10 @@ export default function Blog({data}) {
 
 <div >
 <Layout color="ddd" >
-  <div className="h-pad pad-top">
+  <div className="h-pad pad-top" >
 <TagBar/>
 </div>
-  <div className="flex h-pad"  >
+  <div className="flex h-pad" style={{gap: "1.5rem"}}  >
     <div className="col-8-gap">
       <BlogArticle
       width = ""
@@ -47,16 +47,8 @@ export default function Blog({data}) {
 
 
     </div>
-    <div className="col-4-gap column gap-2 padd" >
-    <BlogArticle
-     width = ""
-      type = "normal"
-      slug = {fslug}
-      tag = {f.tags[0]}
-      title = {f.title}
-      description = {f.description}
-      featuredImage = {f.featuredImage.publicURL}
-      />
+    <div className="col-4-gap" >
+
 
 <BlogArticle
     width = ""
@@ -70,6 +62,38 @@ export default function Blog({data}) {
 
 
     </div>
+    </div>
+    <div className="flex h-pad" style={{gap: "1.5rem"}}  >
+    <div className="col-4-gap" >
+
+
+<BlogArticle
+    width = ""
+      type = "normal"
+      slug = {tslug}
+      tag = {t.tags[0]}
+      title = {t.title}
+      description = {t.description}
+      featuredImage = {t.featuredImage.publicURL}
+      />
+
+
+    </div>
+    <div className="col-8-gap">
+      <BlogArticle
+      width = ""
+      type = "feature"
+      slug = {hslug}
+      tag = {htag}
+      title = {h.title}
+      description = {h.description}
+      featuredImage = {h.featuredImage.publicURL}
+      />
+
+
+
+    </div>
+
     </div>
     <div className="flex gap-2 h-pad b-pad" >
         {otherPosts.map((item) => (

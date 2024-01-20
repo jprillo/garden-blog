@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../../components/layout2'
 import { graphql} from "gatsby"
 import { Helmet } from 'react-helmet'
-import BlogArticle from '../../components/blogArticleOne'
+
 
 
 export default function Plants({data}) {
@@ -12,9 +12,9 @@ export default function Plants({data}) {
 
   return <div >
       <Helmet>
-        <title>Web Development | Jason Prillo</title>
-        <meta name="description" content="These are some of my latest projects." />
-        <meta name="theme-color" content="red" />
+        <title>Florida Butterfly Gardening</title>
+        <meta name="description" content="Turn your backyard into a butterfly paradise by using plants native to Florida, " />
+        <meta name="theme-color" content="white" />
       </Helmet>
 
 <Layout>

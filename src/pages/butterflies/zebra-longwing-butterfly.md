@@ -3,7 +3,7 @@ templateKey: butterfly
 commonName: Zebra Longwing
 otherNames: Zebra Heliconian
 latinName: Heliconius Charithonia
-color: "#5E278C"
+color: "rgb(148 161 252)"
 family: Nymphalidae
 description: The Heliconius Charithonia or as it is most commonly called the Zebra Longwing is a neotropical butterfly known for its black elongated wings with striking yellow stripes. The underside of the wings has a similar pattern but is paler in color and features several small red spots near its narrow body.
 whereToFind: the Zebra Longwing is commonly found in subtropical hammocks, forest margins, shrubby thickets, and adjacent open areas. It's also a regular sight in many butterfly gardens, suburban yards, and parks.
