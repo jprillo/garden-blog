@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 author: Jason Prillo
-featuredImage: /img/3.png
-featuredimage: /img/3.png
+featuredImage: /img/blogplaceholder.png
+featuredimage: /img/blogplaceholder.png
 color1: blue
 date: 2022-07-30T01:23:11.284Z
 authorImage: /img/3.png

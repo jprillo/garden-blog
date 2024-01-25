@@ -20,19 +20,19 @@ export default function Blog({data}) {
 
 
 
-  return <div style={{background: "#2A094B"}}>
+  return <div style={{background: "#0968D7"}}>
       <Helmet>
-        <title>Geeby | Gatsby Starter Blog</title>
-        <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
+        <title>Florida Butterfly Gardening Blog</title>
+        <meta name="description" content="Florida butterfly gardening articles that help your yard become a butterfly paradise. ​" />
         <meta name="theme-color" content="black" />
       </Helmet>
 
 <div >
 <Layout color="ddd" >
-  <div className="h-pad pad-top" >
+  <div className="h-pad" >
 <TagBar/>
 </div>
-  <div className="flex h-pad" style={{gap: "1.5rem"}}  >
+  <div className="flex h-pad" style={{gap: "20px"}}  >
     <div className="col-8-gap">
       <BlogArticle
       width = ""
@@ -49,6 +49,16 @@ export default function Blog({data}) {
     </div>
     <div className="col-4-gap" >
 
+<div className="column" style={{gap: "20px"}} >
+<BlogArticle
+    width = ""
+      type = "normal"
+      slug = {tslug}
+      tag = {t.tags[0]}
+      title = {t.title}
+      description = {t.description}
+      featuredImage = {t.featuredImage.publicURL}
+      />
 
 <BlogArticle
     width = ""
@@ -60,7 +70,7 @@ export default function Blog({data}) {
       featuredImage = {t.featuredImage.publicURL}
       />
 
-
+</div>
     </div>
     </div>
     <div className="flex h-pad" style={{gap: "1.5rem"}}  >
@@ -79,10 +89,10 @@ export default function Blog({data}) {
 
 
     </div>
-    <div className="col-8-gap">
+    <div className="col-4-gap">
       <BlogArticle
       width = ""
-      type = "feature"
+      type = "normal"
       slug = {hslug}
       tag = {htag}
       title = {h.title}

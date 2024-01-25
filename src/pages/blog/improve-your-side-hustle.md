@@ -4,10 +4,10 @@ title: "How to Improve Your Side Hustle with a Website"
 featuredImage: /img/3.png
 date: 2016-12-17T15:04:10.000Z
 author: Jason Prillo
-authorImage: /img/3.png
+authorImage: /img/blogplaceholder.png
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
-featuredimage: /img/3.png
+featuredimage: /img/blogplaceholder.png
 color1: "#5C8865"
 tags:
   - Programing

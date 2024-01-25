@@ -23,20 +23,8 @@ export default function BlogArticle({
     return (
 
         <Link to = {slug} className={width}>
-        <div className= {"blog-article " + type} style={{backgroundImage:  `linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%,rgba(0, 0, 0, 0.64) 50%, rgba(0, 0, 0, 0.81) 100%), url('${featuredImage}')`,
-      borderColor: (() => {
-        switch (tag) {
-          case usedTags[0]:   return tagColors[0];
-          case usedTags[1]:   return tagColors[1];
-          case usedTags[2]: return tagColors[2];
-          case usedTags[3]: return tagColors[3];
-          case usedTags[4]:  return tagColors[4];
+        <div className= {"blog-article " + type} style={{backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${featuredImage}')`,
 
-          default:  return 'blueviolet';
-
-
-        }
-      })()
 
       }}>
 

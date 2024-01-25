@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 author: Jason Prillo
-featuredImage: /img/false.png
+featuredImage: /img/blogplaceholder.png
 featuredimage: /img/3.png
 color1: "#3D5A80"
 date: 2023-03-15T14:04:10.000Z
@@ -39,7 +39,7 @@ Structured data helps search engines understand the content on a website, so web
 
 ### Security:
 
- Security should be a top priority for webmasters in 2023. Hackers are constantly finding new ways to exploit websites, so it is important to ensure your website is as secure as possible. This includes using a secure socket layer (SSL) certificate, using strong passwords, and regularly patching the website. 
+ Security should be a top priority for webmasters in 2023. Hackers are constantly finding new ways to exploit websites, so it is important to ensure your website is as secure as possible. This includes using a secure socket layer (SSL) certificate, using strong passwords, and regularly patching the website.
 
 ### Website Architecture:
 
