@@ -18,7 +18,7 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   color1,
-  author, 
+  author,
   authorImage,
   date,
   tags,
@@ -28,31 +28,31 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <div  style={{background: "#202124"}}>
+    <div  style={{background: "white"}}>
       <Layout>
       {helmet || ""}
-     
-      
+
+
             <div className="h-pad flex gap-2 pad-top b-pad">
                 <div className="col-8 ">
         <p>{tags[0]}</p>
                 <h1 >
               {title}
-            </h1>     
+            </h1>
 <ArthorBar author={author} date={date} authorImage={authorImage} />
          <div className="blog-content">
          <PostContent content={content} />
          </div>
-       
+
            <div style={{ marginTop: `4rem` }}>
              <h4>Tags</h4>
-           
-                 
+
+
              <TagBar/>
-            
+
            </div>
-      
-     
+
+
                 </div>
 
                 <div className="col-4 " style={{padding: "0 4rem"}}>
@@ -60,9 +60,9 @@ export const BlogPostTemplate = ({
                 <img className="v-pad-10" width="100%" src= {adtwo} alt="Jason weather is the worlds most point less app. " />
                 </div>
             </div>
-        
+
             </Layout>
-      
+
     </div>
   );
 };
@@ -82,7 +82,7 @@ const BlogPost = ({ data }) => {
 
   return (
 <div >
-    
+
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -103,7 +103,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
-    
+
     </div>
   );
 };

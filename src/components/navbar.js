@@ -13,7 +13,7 @@
               <div id="main-nav-wrap" >
                   <div className="logo-wrap" >
                       <Link to="/">
-                    <img width="100%" src= {logo} alt="Jason Prillo Web Development Logo" /> </Link>
+                   <p style={{color: "lightgreen"}}>Florida Butterfly Gardening</p></Link>
 
                   </div>
 

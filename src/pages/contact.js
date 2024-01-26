@@ -41,7 +41,7 @@ const Index = () => {
         description="We would love to hear from you!"
       />
 
-      <div className='flex gap-2 h-pad' style={{paddingTop: "50px", paddingBottom: "50px" }}>
+      <div className='flex gap-2 h-pad bg-color' style={{paddingTop: "50px", paddingBottom: "50px" }}>
         <div className='col-6'>
           <h1>Contact Us</h1>
           <p style={{padding: "0 0 2rem 0"}}>We would love to hear from you!</p>

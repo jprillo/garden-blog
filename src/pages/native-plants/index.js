@@ -19,22 +19,24 @@ export default function Plants({data}) {
 
 <Layout>
 
-<div className="h-pad" style={{background: "#2A094B", display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "3%"}}>
+<div className="h-pad bg-color pad-top" >
+<h1 style={{  textAlign: "center"}}> Native Florida Plants</h1>
+< div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
 {h.map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug} style={{
-            borderColor: item.node.frontmatter.color, position: "relative", backgroundImage: `url(${item.node.frontmatter.imageOne.publicURL})` ,
-           borderRadius: "25px", height: "200px", backgroundPosition: "center", backgroundSize: "cover" }}>
+            borderColor: item.node.frontmatter.color, position: "relative", backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')` ,
+           borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }}>
 
 <div >
-              <h3 style={{color: item.node.frontmatter.color, position: "absolute", top: 0}}>{item.node.frontmatter.commonName}</h3>
-
+              <h3 >{item.node.frontmatter.commonName}</h3>
+              <p >{item.node.frontmatter.scientificName}</p>
               </div>
 
             </a>
 
 ))}
 
-
+</div>
 </div>
     </Layout>
 
@@ -55,6 +57,7 @@ query MyQuery {
           }
           frontmatter {
             commonName
+            scientificName
             description
             color
             imageOne {

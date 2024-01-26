@@ -51,12 +51,7 @@
 
 /**************************************END HAMBURGER*******************************/
 .logo-wrap {
-  width: 50px;
 
-  @include breakpoint(md){
-   width: 260px;
-
-  }
 
   &:hover{
     opacity: .5;

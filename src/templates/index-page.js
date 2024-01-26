@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
   helmet,
 }) => {
   return (
-    <div style={{ position: "relative", overflowY: "hidden" }}>
+    <div className='bg-color' style={{ position: "relative", overflowY: "hidden" }}>
       {helmet || ""}
       <Layout>
       <Hero

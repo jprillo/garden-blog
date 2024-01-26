@@ -14,17 +14,17 @@ export default function Plants({data}) {
         <meta name="description" content="These are some of my latest projects." />
         <meta name="theme-color" content="red" />
       </Helmet>
-<Layout>
-<div className="h-pad" style={{background: "white", display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "3%"}}>
+<Layout>-
+<div className="h-pad" style={{background: "white", display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "20px"}}>
   {
 
    sortedItems.map((item) => (
-        <a className="flower-container" href={item.node.fields.slug} style={{
-          borderColor: item.node.frontmatter.color, position: "relative", backgroundImage: `url(${item.node.frontmatter.imageOne.publicURL})` ,
-         borderRadius: "25px", height: "200px", backgroundPosition: "center", backgroundSize: "cover" }} >
-       <div >
-              <h3 style={{color: item.node.frontmatter.color, position: "absolute", top: 0}}>{item.node.frontmatter.commonName}</h3>
-
+        <a className="flower-container " href={item.node.fields.slug} style={{
+          borderColor: item.node.frontmatter.color,  backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')`,
+         borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }} >
+<div>
+              <h3 >{item.node.frontmatter.commonName}</h3>
+              <p >{item.node.frontmatter.latinName}</p>
               </div>
 
         </a>
@@ -51,6 +51,7 @@ query MyQuery {
           }
           frontmatter {
             commonName
+            latinName
             description
             color
             imageOne {

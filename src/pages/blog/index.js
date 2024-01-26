@@ -20,7 +20,7 @@ export default function Blog({data}) {
 
 
 
-  return <div style={{background: "#0968D7"}}>
+  return <div className="bg-color">
       <Helmet>
         <title>Florida Butterfly Gardening Blog</title>
         <meta name="description" content="Florida butterfly gardening articles that help your yard become a butterfly paradise. ​" />
@@ -29,7 +29,7 @@ export default function Blog({data}) {
 
 <div >
 <Layout color="ddd" >
-  <div className="h-pad" >
+  <div className="h-pad pad-top" >
 <TagBar/>
 </div>
   <div className="flex h-pad" style={{gap: "20px"}}  >
@@ -73,7 +73,7 @@ export default function Blog({data}) {
 </div>
     </div>
     </div>
-    <div className="flex h-pad" style={{gap: "1.5rem"}}  >
+    <div className="flex h-pad" style={{gap: "20px", flexWrap: "wrap"}}  >
     <div className="col-4-gap" >
 
 
@@ -86,6 +86,34 @@ export default function Blog({data}) {
       description = {t.description}
       featuredImage = {t.featuredImage.publicURL}
       />
+
+
+    </div>
+    <div className="col-4-gap">
+      <BlogArticle
+      width = ""
+      type = "normal"
+      slug = {hslug}
+      tag = {htag}
+      title = {h.title}
+      description = {h.description}
+      featuredImage = {h.featuredImage.publicURL}
+      />
+
+
+
+    </div>
+    <div className="col-4-gap">
+      <BlogArticle
+      width = ""
+      type = "normal"
+      slug = {hslug}
+      tag = {htag}
+      title = {h.title}
+      description = {h.description}
+      featuredImage = {h.featuredImage.publicURL}
+      />
+
 
 
     </div>
