@@ -82,34 +82,48 @@ export const PlantTemplate = ({
 <p><span className="bold">Other Common Names: </span>{otherNames}</p>
 </div></div>
 
-        <div className="needs flex-5 h-pad " style={{backgroundColor: color}}>
-          <div>
-            <h3>Water</h3>
-            <img src={water} alt="logo"/>
-          <p>{waterNeeds}</p>
-          </div>
-          <div>
+        <div className=" flex-5 h-pad " style={{backgroundColor: color}}>
 
 
-          <h3>Sun</h3>
-          <img src={sun} alt="logo"/>
-          <p>{sunNeeds}</p>
-            </div>
-            <div>
-            <h3>Fertilizer</h3>
-            <img src={fertilizer} alt="logo"/>
-            <p>{fertilizerNeeds}</p>
-            </div>
-            <div>
-            <h3>Soil</h3>
-            <img src={soil} alt="logo"/>
-            <p>{soilNeeds}</p>
-            </div>
-            <div>
-            <h3>Propagation</h3>
-            <img src={propagate} alt="logo"/>
-            <p>{propagation}</p>
-            </div>
+        <div className="needs">
+    <div style={{display: "flex", flexDirection: "row"}}>
+        <h3>Water</h3>
+        <img style={{width: "60px"}} src={water} alt="logo"/>
+    </div>
+    <p>{waterNeeds}</p>
+</div>
+
+<div className="needs">
+    <div style={{display: "flex", flexDirection: "row"}}>
+        <h3>Sun</h3>
+        <img style={{width: "60px"}} src={sun} alt="logo"/>
+    </div>
+    <p>{sunNeeds}</p>
+</div>
+
+<div className="needs">
+    <div style={{display: "flex", flexDirection: "row"}}>
+        <h3>Fertilizer</h3>
+        <img style={{width: "60px"}} src={fertilizer} alt="logo"/>
+    </div>
+    <p>{fertilizerNeeds}</p>
+</div>
+
+<div className="needs">
+    <div style={{display: "flex", flexDirection: "row"}}>
+        <h3>Soil</h3>
+        <img style={{width: "60px"}} src={soil} alt="logo"/>
+    </div>
+    <p>{soilNeeds}</p>
+</div>
+
+<div className="needs">
+    <div style={{display: "flex", flexDirection: "row"}}>
+        <h3>Propagation</h3>
+        <img style={{width: "60px"}} src={propagate} alt="logo"/>
+    </div>
+    <p>{propagation}</p>
+</div>
 
 
 

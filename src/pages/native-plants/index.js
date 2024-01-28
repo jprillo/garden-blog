@@ -20,7 +20,7 @@ export default function Plants({data}) {
 <Layout>
 
 <div className="h-pad bg-color pad-top" >
-<h1 style={{  textAlign: "center"}}> Native Florida Plants</h1>
+<h1 style={{  textAlign: "center", color: "#D3F9C9"}}> Native Florida Plants</h1>
 < div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
 {h.map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug} style={{

@@ -8,14 +8,18 @@ export default function Plants({data}) {
   const h = d.edges;
   const sortedItems = [...h].sort((a, b) => a.node.frontmatter.commonName.localeCompare(b.node.frontmatter.commonName));
 
-  return <div >
+  return <div className="bg-color">
       <Helmet>
-        <title>Butterflies | Florida BUtterfly Gardening</title>
+        <title>Butterflies | Florida Butterfly Gardening</title>
         <meta name="description" content="These are some of my latest projects." />
         <meta name="theme-color" content="red" />
       </Helmet>
 <Layout>-
-<div className="h-pad" style={{background: "white", display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "50px", paddingBottom: "50px", gap: "20px"}}>
+<div className="h-pad bg-color pad-top">
+
+<h1 style={{  textAlign: "center", color: "#D3F9C9"}}>Florida Butterflies</h1>
+
+  <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
   {
 
    sortedItems.map((item) => (
@@ -31,7 +35,7 @@ export default function Plants({data}) {
       ))
    }
 </div>
-
+</div>
     </Layout>
 
 

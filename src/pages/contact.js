@@ -41,10 +41,10 @@ const Index = () => {
         description="We would love to hear from you!"
       />
 
-      <div className='flex gap-2 h-pad bg-color' style={{paddingTop: "50px", paddingBottom: "50px" }}>
-        <div className='col-6'>
-          <h1>Contact Us</h1>
-          <p style={{padding: "0 0 2rem 0"}}>We would love to hear from you!</p>
+      <div className='flex gap-2 h-pad bg-color' style={{paddingTop: "50px", paddingBottom: "100px", justifyContent: "center" }}>
+        <div  className='col-6'>
+        <h1 style={{  textAlign: "center", color: "#D3F9C9", paddingBottom: "0px"}}>Contact us.</h1>
+          <p style={{textAlign: "center", color: "white", padding: "0 0 40px 0"}}>We would love to hear from you!</p>
           <form
     name="contact"
     method="post"
@@ -138,9 +138,7 @@ const Index = () => {
 </form>
 
         </div>
-        <div className='col-6'>
 
-        </div>
       </div>
     </Layout>
   );

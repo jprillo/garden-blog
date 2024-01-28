@@ -11,10 +11,12 @@ export default function Hero(props) {
       <div className='h-pad hero-container' >
 
         <section className="hero flex gap-1">
-        <div className="col-6" >
-        <p className="subheading">{props.subheadingOne}</p>
-          <h1>{props.headingOne}</h1>
-<p>Lorem ipsum dolor sit amet consectetur. Nibh viverra tortor massa mi sodales aliquet augue. Duis ut enim pellentesque id urna eget libero. Adipiscing eget metus vitae non. Lobortis augue vel urna sem enim est feugiat.</p>
+        <div className="col-6 " >
+<div className='hover-line-container'>
+          <h1 style={{fontSize: "100px", color: "white"}}>{props.headingOne}</h1>
+          <div class="line"></div>
+          </div>
+<p style={{color: "white", fontSize: "30px", paddingTop: '2rem'}}>Attract butterflies to your garden identifying and plant native to Florida.</p>
 
         </div>
         <div className="col-6 right hero-image" >
