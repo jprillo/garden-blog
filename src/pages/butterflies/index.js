@@ -23,7 +23,8 @@ export default function Plants({data}) {
   {
 
    sortedItems.map((item) => (
-        <a className="flower-container " href={item.node.fields.slug} style={{
+        <a className="flower-container " href={item.node.fields.slug}  aria-label={`Learn more about ${item.node.frontmatter.commonName}`}  style={{
+
           borderColor: item.node.frontmatter.color,  backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')`,
          borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }} >
 <div>

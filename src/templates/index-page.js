@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import { Helmet } from 'react-helmet';
 import Hero from '../components/hero';
 import Layout from '../components/layout2'
+import ButterfliesData from '../components/ButterliesData'
+import PlantData from '../components/PlantData'
 
 export const IndexPageTemplate = ({
   headingOne,
@@ -27,6 +29,42 @@ export const IndexPageTemplate = ({
         heroButtonLinkOne={heroButtonLinkOne}
         heroButtonLinkTwo={heroButtonLinkTwo}
       />
+
+        <ButterfliesData render={sortedItems => (
+      <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
+  {
+
+   sortedItems.map((item) => (
+        <a className="flower-container " href={item.node.fields.slug} style={{
+          borderColor: item.node.frontmatter.color,  backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')`,
+         borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }} >
+<div>
+              <h3 >{item.node.frontmatter.commonName}</h3>
+              <p >{item.node.frontmatter.latinName}</p>
+              </div>
+
+        </a>
+              ))}
+              </div>
+          )} />
+
+
+       <PlantData render={plants => (
+                        <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px" }}>
+                            {plants.map((item) => (
+            <a  className=" flower-container" href={item.node.fields.slug} style={{
+              borderColor: item.node.frontmatter.color, position: "relative", backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')` ,
+             borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }}>
+
+  <div >
+                <h3 >{item.node.frontmatter.commonName}</h3>
+                <p >{item.node.frontmatter.scientificName}</p>
+                </div>
+
+              </a>
+          ))}
+          </div>
+      )} />
       </Layout>
     </div>
   )

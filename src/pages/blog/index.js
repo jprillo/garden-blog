@@ -11,8 +11,7 @@ export default function Blog({data}) {
     const d = data.allMarkdownRemark;
     const h = d.edges[0].node.frontmatter
     const hslug = d.edges[0].node.fields.slug
-    const f = d.edges[1].node.frontmatter
-    const fslug = d.edges[1].node.fields.slug
+
     const t = d.edges[2].node.frontmatter
     const tslug = d.edges[2].node.fields.slug
     const htag = h.tags[0]
