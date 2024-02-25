@@ -14,7 +14,7 @@ export default function Hero(props) {
         <div className="col-6 " >
 <div className='hover-line-container'>
           <h1 style={{fontSize: "100px", color: "white"}}>{props.headingOne}</h1>
-          <div class="line"></div>
+          <div class="h-line"></div>
           </div>
 <p style={{color: "white", fontSize: "30px", paddingTop: '2rem'}}>Attract butterflies to your garden identifying and plant native to Florida.</p>
 

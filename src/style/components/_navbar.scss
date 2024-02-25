@@ -51,8 +51,10 @@
 
 /**************************************END HAMBURGER*******************************/
 .logo-wrap {
-
-
+padding:0;
+margin:0;
+display: flex;
+align-items: center;
   &:hover{
     opacity: .5;
   }
@@ -74,8 +76,6 @@ color: $secondary-color;
 display: flex;
 justify-content: space-between;
 
-
- height: 65px;
   transition: background .5s;
   position: relative;
   width: 100%;
@@ -122,14 +122,18 @@ margin-left: 25px;
       margin: .75em;
   }
 }
+.set{
+  display: flex;
+  align-items: center;
+}
 .responsive-nav.mobile-nav .nav a{
 
   font-family: $primary-font;
-  font-weight: bold;
+  font-weight: 200;
   color: $nav-text-color;
-  font-size: 60px;
-  line-height: 120%;
-  margin:  40px 0;
+  font-size: 50px;
+
+  margin:  20px 0;
   @include breakpoint(md){
       font-weight: 500;
       font-size: 20px;
@@ -168,11 +172,11 @@ margin-left: 25px;
 .nav a{
   @include breakpoint(md){
       font-family: $primary-font;
-      font-weight: 400;
+      font-weight: 200;
       font-size: 20px;
       line-height: 120%;
-      margin: .5em;
-      padding: .5em;
+      margin: 0 .5em;
+      padding: 0 .5em;
       text-transform:capitalize;
       color: white;
   }
@@ -217,7 +221,7 @@ margin-top: 20px;
         font-weight: normal;
         background: $hover-color;
         border-color: $hover-color;
-        color: white;
+      
 
       }
       &:active {

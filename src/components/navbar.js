@@ -11,21 +11,21 @@
           <section  className={`navagation-wrap h-pad col-12  ${isActive ? 'mobile-wrap' : ''}`}>
 
               <div id="main-nav-wrap" >
-                  <div className="logo-wrap" >
+                  <div className="logo-wrap"  >
                       <Link to="/">
-                   <p style={{color: "lightgreen"}}>Florida Butterfly Gardening</p></Link>
+                   <p style={{color: "lightgreen", fontWeight: "900", fontSize: "25px"}}>Florida Butterfly Gardening</p></Link>
 
                   </div>
 
                   <div >
                       <div  className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                           <ul className="nav">
-                                     <li><Link  activeClassName="active" active= "active" to="/">Home</Link></li>
-                                     <li><Link to="/native-plants/" activeClassName="active" >Native Plants</Link></li>
-                                     <li><Link to="/butterflies/" activeClassName="active" >Butterflies</Link></li>
-                                     <li><Link to="/blog/" activeClassName="active" >Blog</Link></li>
+                                     <li className="set"><Link  activeClassName="active" active= "active" to="/">Home</Link></li>
+                                     <li className="set"><Link to="/native-plants/" activeClassName="active" >Native Plants</Link></li>
+                                     <li className="set"><Link to="/butterflies/" activeClassName="active" >Butterflies</Link></li>
+                                     <li className="set"><Link to="/blog/" activeClassName="active" >Blog</Link></li>
 
-                           <div className="nav-button-container">
+                           <li className="set" style={{marginTop: "25px"}}>
                            <Button
                     type="secondary nav-button"
                     cta= "Contact"
@@ -34,7 +34,7 @@
 
                     />
 
-                              </div>
+                              </li>
 
 
 
