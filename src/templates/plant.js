@@ -42,6 +42,7 @@ export const PlantTemplate = ({
   imageThree,
   helmet,
   color,
+  slug,
   interestingFacts,
   reasonsToAvoid,
 }) => {
@@ -143,7 +144,9 @@ export const PlantTemplate = ({
 </div>
 <PlantData render={plants => (
                         <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px" }}>
-                            {plants.map((item) => (
+                            {plants.filter(item => item.node.fields.slug !== slug)
+                             .slice(0, 4)
+                            .map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug} style={{
               borderColor: item.node.frontmatter.color, position: "relative", backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')` ,
              borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }}>
@@ -172,14 +175,15 @@ PlantTemplate.propTypes = {
 
   helmet: PropTypes.object,
 };
-
-const PlantPost = ({ data }) => {
+const PlantPost = ({ data, pageContext }) => {
   const { markdownRemark: post } = data;
+  const { slug } = pageContext; //
 
   return (
 <div >
 
       <PlantTemplate
+      slug={slug}
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
@@ -222,6 +226,9 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      fields{
+        slug
+      }
       frontmatter {
         commonName
         otherNames

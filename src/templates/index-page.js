@@ -29,12 +29,16 @@ export const IndexPageTemplate = ({
         heroButtonLinkOne={heroButtonLinkOne}
         heroButtonLinkTwo={heroButtonLinkTwo}
       />
-
+      <div style={{background: "darkred"}}>
+          <div style={{textAlign: "center"}}>
+<h3 style={{color: "white"}}>Florida Butterflies</h3>
+<p  style={{color: "white"}}>Indentify what you have or find out what you can get.</p>
+</div>
         <ButterfliesData render={sortedItems => (
       <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
   {
 
-   sortedItems.map((item) => (
+   sortedItems .slice(0, 4).map((item) => (
         <a className="flower-container " href={item.node.fields.slug} style={{
           borderColor: item.node.frontmatter.color,  backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')`,
          borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }} >
@@ -46,12 +50,15 @@ export const IndexPageTemplate = ({
         </a>
               ))}
               </div>
-          )} />
-
-
+          )} /></div>
+<div style={{background: "darkgreen"}}>
+          <div style={{textAlign: "center"}}>
+<h3 style={{color: "white"}}>Florida Native Plants</h3>
+<p  style={{color: "white"}}>Pick some out to plant in your garden</p>
+</div>
        <PlantData render={plants => (
                         <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px" }}>
-                            {plants.map((item) => (
+                            {plants .slice(0, 4).map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug} style={{
               borderColor: item.node.frontmatter.color, position: "relative", backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')` ,
              borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }}>
@@ -63,8 +70,9 @@ export const IndexPageTemplate = ({
 
               </a>
           ))}
+
           </div>
-      )} />
+      )} /> </div>
       </Layout>
     </div>
   )
