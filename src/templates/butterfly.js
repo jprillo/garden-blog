@@ -78,16 +78,19 @@ export const ButterflyTemplate = ({
 
 
 
-       <div className="flex gap-1 pad-top b-pad h-pad"  style={{background: "#e7f5fb"}}>
+       <div className="flex gap-1 pad-top b-pad h-pad" >
 
 
 
 
-<div  className="web-content col-7">
+<div  className="web-content col-9">
 <PostContent content={content} />
 </div>
-<div className="col-5">
+<div className="col-3">
   <div style={{border: "solid blue 4px", borderColor: color, padding: "1rem", borderRadius: "25px"}}><h4 style={{color: color }}>Did you Know?</h4><p style={{color: color}}>{interestingFactsTwo}</p></div>
+<div style={{border: "solid blue 4px", borderColor: "", padding: "1rem", borderRadius: "25px"}}>
+  <h3>Does your business need a leg up? Formal Flamingo Digital Marketign</h3>
+</div>
   <div style={{border: "solid blue 4px", borderColor: color, padding: "1rem", borderRadius: "25px"}}><h4 style={{color: color }}>Did you Know?</h4><p style={{color: color}}>{interestingFactsOne}</p></div>
 
 </div>

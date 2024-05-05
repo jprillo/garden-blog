@@ -47,6 +47,14 @@ export const PlantTemplate = ({
   reasonsToAvoid,
 }) => {
   const PostContent = contentComponent || Content;
+  // Helper function to shuffle an array
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+  }
+}
+
 
   return (
     <div style={{overflowX: "hidden"} }>
@@ -142,24 +150,33 @@ export const PlantTemplate = ({
 </div>
 
 </div>
-<PlantData render={plants => (
-                        <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px" }}>
-                            {plants.filter(item => item.node.fields.slug !== slug)
-                             .slice(0, 4)
-                            .map((item) => (
-            <a  className=" flower-container" href={item.node.fields.slug} style={{
-              borderColor: item.node.frontmatter.color, position: "relative", backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')` ,
-             borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover" }}>
+<PlantData render={plants => {
+  // First, exclude the current item
+  const filteredPlants = plants.filter(item => item.node.fields.slug !== slug);
 
-  <div >
-                <h3 >{item.node.frontmatter.commonName}</h3>
-                <p >{item.node.frontmatter.scientificName}</p>
-                </div>
+  // Shuffle the array of filtered plants
+  shuffleArray(filteredPlants);
 
-              </a>
-          ))}
+  // Slice the first 4 items from the shuffled array
+  const selectedPlants = filteredPlants.slice(0, 4);
+
+  return (
+    <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px" }}>
+      {selectedPlants.map((item) => (
+        <a className="flower-container" href={item.node.fields.slug} style={{
+          borderColor: item.node.frontmatter.color, position: "relative", backgroundImage: `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')`,
+          borderRadius: "25px", height: "265px", backgroundPosition: "center", backgroundSize: "cover"
+        }}>
+          <div>
+            <h3>{item.node.frontmatter.commonName}</h3>
+            <p>{item.node.frontmatter.scientificName}</p>
           </div>
-      )} />
+        </a>
+      ))}
+    </div>
+  );
+}} />
+
             </Layout>
 
     </div>

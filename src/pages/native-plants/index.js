@@ -22,6 +22,7 @@ export default function Plants({data}) {
 <div className="h-pad bg-color pad-top" >
 <h1 style={{  textAlign: "center", color: "#D3F9C9"}}> Native Florida Plants</h1>
 < div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
+
 {h.map((item) => (
             <a  className=" flower-container" href={item.node.fields.slug}  aria-label={`Learn more about ${item.node.frontmatter.commonName}`} style={{
             borderColor: item.node.frontmatter.color, position: "relative", backgroundImage:  `linear-gradient(179.83deg, rgba(0, 0, 0, 0) -2.09%, rgba(0, 0, 0, 0.8) 106.17%), url('${item.node.frontmatter.imageOne.publicURL}')` ,
