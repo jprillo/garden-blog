@@ -5,7 +5,7 @@ otherNames: Eastern Purple Coneflower
 scientificName: Echinacea purpurea
 family: Asteraceae
 size: 2-5 ft tall, 1.5-2 ft wide
-hostTo: Bees, butterflies, and birds
+hostTo: N/A
 zones: USDA Hardiness Zones 3-9
 toxic: No
 lifespan: Perennial

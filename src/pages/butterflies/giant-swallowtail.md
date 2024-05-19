@@ -15,7 +15,7 @@ interestingFactsThree: Despite its large size, the Giant Swallowtail is known fo
 migration: Giant Swallowtails do not undertake long migrations but can travel long distances in search of food or suitable host plants.
 distribution: Found throughout the eastern United States, parts of the Midwest, the Southwest, and south into Mexico and Central America.
 flightSpeed: Giant Swallowtails have a swift and agile flight, often darting quickly and erratically.
-conservationStatus: The Giant Swallowtail is not currently listed as endangered or threatened. However, habitat loss and the use of pesticides can impact local populations.
+conservationStatus: The Giant Swallowtail is not currently listed as endangered or threatened.
 culturalSignificance: The Giant Swallowtail is admired for its large size and beauty, making it a favorite among butterfly enthusiasts and gardeners.
 predatorsAndThreats: Birds, spiders, and other insects might prey on Giant Swallowtails. However, the caterpillar's camouflage and defensive secretion deter many potential predators.
 imageOne: /img/butterflies/monarch-butterfly-1.png
