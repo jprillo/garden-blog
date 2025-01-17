@@ -1,6 +1,6 @@
 ---
 templateKey: butterfly
-commonName: Monarch 
+commonName: Monarch
 otherNames: Milkweed Butterfly, Black Veined Brown
 latinName: Danaus plexippus
 color: "#ff5a06"
@@ -26,10 +26,7 @@ imageOne: /img/butterflies/monarch-butterfly-1.png
 Monarch butterflies lay their eggs on the underside of milkweed leaves. These eggs are tiny, oval, and pale yellow. After about 4 days, the caterpillar will emerge from the egg.
 
 ### Caterpillar
-The Monarch caterpillar is easily recognizable with its striking pattern of black, white, and yellow stripes. As it grows, it will molt (shed its skin) several times.
-
-#### First to Fifth Instar
-During these stages, the caterpillar will continuously eat the milkweed leaves, storing the plant's toxins in its body, which will deter predators from eating it. The caterpillar will grow rapidly during this time, reaching a length of about 2 inches.
+The Monarch caterpillar is easily recognizable with its striking pattern of black, white, and yellow stripes. As it grows, it will molt (shed its skin) several times. The caterpillar will continuously eat the milkweed leaves, storing the plant's toxins in its body, which will deter predators from eating it. It will grow rapidly reaching a length of about 2 inches.
 
 ### Formation of the Chrysalis
 Once the caterpillar is fully grown, it will find a sheltered spot to transform into a chrysalis. The green chrysalis will hang, secured by a silk thread, and over about 10 days, the caterpillar will undergo a metamorphosis into a butterfly.

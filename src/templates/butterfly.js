@@ -78,20 +78,19 @@ export const ButterflyTemplate = ({
 
 
 
-       <div className="flex gap-1 pad-top b-pad h-pad" >
+       <div className="flex gap-1 pad-top b-pad h-pad"  >
 
 
 
-
-<div  className="web-content col-9">
+<div  className="web-content col-9" >
 <PostContent content={content} />
 </div>
-<div className="col-3">
-  <div style={{border: "solid blue 4px", borderColor: color, padding: "1rem", borderRadius: "25px"}}><h4 style={{color: color }}>Did you Know?</h4><p style={{color: color}}>{interestingFactsTwo}</p></div>
+<div className="col-3" style={{display: "flex", flexDirection: "column", gap: "25px"}}>
+  <div style={{backgroundColor: color,  padding: "2rem", borderRadius: "25px"}}><h3 style={{fontStyle: "italic",fontWeight: "bold", color: "white"}}>Did you know?</h3><p style={{color: "white"}}>{interestingFactsTwo}</p></div>
 <div style={{border: "solid blue 4px", borderColor: "", padding: "1rem", borderRadius: "25px"}}>
   <h3>Does your business need a leg up? Formal Flamingo Digital Marketign</h3>
 </div>
-  <div style={{border: "solid blue 4px", borderColor: color, padding: "1rem", borderRadius: "25px"}}><h4 style={{color: color }}>Did you Know?</h4><p style={{color: color}}>{interestingFactsOne}</p></div>
+<div style={{backgroundColor: color,  padding: "2rem", borderRadius: "25px"}}><h3 style={{fontStyle: "italic",fontWeight: "bold", color: "white"}}>Did you know?</h3><p style={{color: "white"}}>{interestingFactsOne}</p></div>
 
 </div>
 </div>

@@ -5,6 +5,7 @@ import Hero from '../components/hero';
 import Layout from '../components/layout2'
 import ButterfliesData from '../components/ButterliesData'
 import PlantData from '../components/PlantData'
+import Button from '../components/button'
 
 export const IndexPageTemplate = ({
   headingOne,
@@ -29,10 +30,11 @@ export const IndexPageTemplate = ({
         heroButtonLinkOne={heroButtonLinkOne}
         heroButtonLinkTwo={heroButtonLinkTwo}
       />
-      <div style={{background: "darkred"}}>
+      <div className='v-pad' style={{background: "darkred"}}>
           <div style={{textAlign: "center"}}>
 <h3 style={{color: "white"}}>Florida Butterflies</h3>
 <p  style={{color: "white"}}>Indentify what you have or find out what you can get.</p>
+
 </div>
         <ButterfliesData render={sortedItems => (
       <div className='h-pad' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", paddingTop: "20px", paddingBottom: "50px", gap: "20px"}}>
@@ -50,8 +52,10 @@ export const IndexPageTemplate = ({
         </a>
               ))}
               </div>
-          )} /></div>
-<div style={{background: "darkgreen"}}>
+          )} />
+
+        <div style={{display: "flex", justifyContent: "center"}}> <Button type="secondary sm" cta="See More" link="/butterflies/"  /></div> </div>
+<div className='v-pad' style={{background: "darkgreen"}}>
           <div style={{textAlign: "center"}}>
 <h3 style={{color: "white"}}>Florida Native Plants</h3>
 <p  style={{color: "white"}}>Pick some out to plant in your garden</p>
@@ -72,7 +76,9 @@ export const IndexPageTemplate = ({
           ))}
 
           </div>
-      )} /> </div>
+      )} />
+        <div style={{display: "flex", justifyContent: "center"}}> <Button type="secondary sm" cta="See More" link="/native-plants/"  /></div>
+      </div>
       </Layout>
     </div>
   )
